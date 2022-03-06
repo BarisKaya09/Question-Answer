@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+  width: 500px;
+  min-height: 550px;
+  padding: 50px;
+  margin: 40px auto;
+}
+
+.wrapper .question-container {
+  height: 25%;
+  width: 100%;
+  margin-bottom: 30px;
+  padding-bottom: 5px;
+  border-bottom: 3px solid rgb(229, 239, 247);
+}
+
+.a {
+  grid-area: a;
+}
+
+.b {
+  grid-area: b;
+}
+
+.c {
+  grid-area: c;
+}
+
+.d {
+  grid-area: d;
+}
+
+.wrapper .answer-container {
+  height: 50%;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'a b'
+    'c d';
+}
+
+.wrapper .answer-container .answer-choice {
+  width: 100px;
+  margin: 20px auto;
+}
+
+.wrapper .continue {
+  width: 160px;
+  height: 30px;
+  border: none;
+  outline: none;
+  background: #0084ff;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.wrapper .continue:hover {
+  opacity: 0.9;
+  transition: all 0.5s ease;
+}
